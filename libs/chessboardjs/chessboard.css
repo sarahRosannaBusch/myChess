@@ -1,0 +1,82 @@
+/** filename: chessboard.css
+ *  description: styles for myChess app
+ *  author: Sarah Rosanna Busch
+ *  date: 15 Nov 2021
+ */
+
+/* derived from: */
+/*! chessboard.js v@VERSION | (c) 2019 Chris Oakman | MIT License chessboardjs.com/license */
+
+.clearfix-7da63 {
+  clear: both;
+}
+
+.board-b72b1 {
+  border: 2px solid #404040;
+  box-sizing: content-box;
+}
+
+.square-55d63 {
+  float: left;
+  position: relative;
+
+  /* disable any native browser highlighting */
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.white-1e1d7 {
+  background-color: rgb(230, 230, 250, 1);
+  color: blueviolet;
+}
+
+.black-3c85d {
+  background-color: rgb(138, 43, 226, 0.75);
+  color: lavender;
+}
+
+.highlight1-32417, .highlight2-9c5d2 {
+  box-shadow: inset 0 0 3px 3px yellow;
+}
+
+.notation-322f9 {
+  cursor: default;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  position: absolute;
+}
+
+.alpha-d2270 {
+  bottom: 1px;
+  right: 3px;
+}
+
+.numeric-fc462 {
+  top: 2px;
+  left: 2px;
+}
+
+/* my additions */
+
+h3 {
+    text-align: center;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    font-family: cursive;
+    color: blueviolet;
+}
+
+.container {
+    width: 95%;
+    max-width: 70vh; 
+    margin: auto
+ }
+
+ .pgn {
+    min-height: 3em;
+    color: lavender;
+ }

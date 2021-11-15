@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8' /> 
+    <title> myChess </title>
+    <meta name='author' content='Sarah Rosanna Busch' />
+    <meta name='description' content='Serverless version of myChess' />
+    <meta name='date' content='21 April 2021' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='icon shortcut' href='img/chesspieces/myPieces/wR.png' />
+    <link rel='stylesheet' href='libs/chessboardjs/chessboard.css' />
+</head>
+<body onload='myChess.init()' style='background:#343434'>
+    <section>
+        <h3 id="status" style="padding-bottom:0.25em">Make your move</h3>
+        <div id="myBoard" class="container spin"></div>
+        <br>
+        <div id='pgn' class='pgn container'></div>
+        <br>
+        <div id='fen'></div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='libs/chessboardjs/chessboard.js'></script>
+    <script src='libs/chess.js'></script>
+    <script src='myChess.js'></script>
+</body>
+</html>

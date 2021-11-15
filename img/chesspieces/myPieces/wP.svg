@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80"
+   height="80"
+   viewBox="0 0 21.166666 21.166667"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="wP.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6904"
+       id="linearGradient6898"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.6033535,0,0,3.0419266,2.0541265,-507.32635)"
+       x1="3.2842243"
+       y1="260.68024"
+       x2="6.0667095"
+       y2="261.22427" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6904">
+      <stop
+         style="stop-color:#e6e6fa;stop-opacity:1"
+         offset="0"
+         id="stop6900" />
+      <stop
+         style="stop-color:#8a2be2;stop-opacity:1"
+         offset="1"
+         id="stop6902" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.1375"
+     inkscape:cx="40"
+     inkscape:cy="39.918534"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1278"
+     inkscape:window-height="916"
+     inkscape:window-x="1084"
+     inkscape:window-y="324"
+     inkscape:window-maximized="0"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid15" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-275.83332)">
+    <g
+       id="g836"
+       transform="translate(0.3978738,-0.13526675)">
+      <path
+         sodipodi:nodetypes="scccccccccccs"
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#e6e6fa;fill-opacity:1;stroke:none;stroke-width:0.79118156;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 10.236147,278.80294 c -2.3122224,0 -4.1866604,1.87499 -4.186654,4.18714 7.8e-6,1.57581 0.875022,2.94214 2.1620221,3.65681 l -0.9567169,0.69681 0.837334,0.83767 -2.5120045,6.11953 h 4.6053363 4.605338 l -2.481367,-6.13326 0.806698,-0.82394 -0.940399,-0.65309 c 1.333495,-0.70014 2.247081,-2.09053 2.247091,-3.70053 6e-6,-2.31215 -1.874419,-4.18714 -4.186678,-4.18714 z"
+         id="path6892" />
+      <path
+         id="path6894"
+         d="m 10.705889,279.18555 c -1.9020834,0 -3.4440266,1.80191 -3.4440217,4.02346 6.5e-6,1.51568 0.7198077,2.8293 1.7785149,3.51515 l -0.7870114,0.66956 0.688805,0.8047 -2.0664158,5.88246 h 3.788405 3.788437 l -2.041192,-5.89474 0.663587,-0.79242 -0.773568,-0.62692 c 1.096931,-0.67281 1.848471,-2.00876 1.848477,-3.55779 3e-6,-2.22155 -1.541928,-4.02346 -3.444017,-4.02346 z"
+         style="display:inline;opacity:1;fill:url(#linearGradient6898);fill-opacity:1;stroke:none;stroke-width:0.70352811;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scccccccccccs" />
+      <path
+         sodipodi:nodetypes="scccccccccccscccccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6896"
+         d="m 10.236147,278.40818 c -2.5260142,0 -4.582432,2.05555 -4.5824255,4.58192 8.1e-6,1.59128 0.8715061,2.67778 2.1064184,3.49767 l -1.4703181,0.85595 1.5470257,1.09278 -2.8111266,6.25916 h 5.1597431 5.159734 l -2.811149,-6.25916 1.547058,-1.09278 -1.452318,-0.80789 c 1.280736,-0.81223 2.189795,-1.91877 2.189804,-3.54573 6e-6,-2.52637 -2.056429,-4.58192 -4.582446,-4.58192 z m 3.65268,4.71008 c -7e-6,1.40864 -0.796216,2.61896 -1.96123,3.22997 l -0.290067,0.15118 1.183224,0.81581 -1.178391,0.80751 2.448278,5.51767 -3.905167,-0.19189 -3.9051609,0.19189 2.4482645,-5.51767 -1.1783863,-0.80751 1.1974561,-0.84972 -0.2806295,-0.15645 c -1.1243838,-0.62419 -1.8871493,-1.81219 -1.8871562,-3.19089 -5.7e-6,-2.02355 1.6315529,-3.65485 3.6544713,-3.6548 2.022966,4e-5 3.654515,1.63243 3.654509,3.65489 z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.791182;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>
