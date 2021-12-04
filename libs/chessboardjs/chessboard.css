@@ -71,8 +71,7 @@ h3 {
 }
 
 .container {
-    width: 95%;
-    max-width: 70vh; 
+    max-width: 80vh; 
     margin: auto
  }
 
