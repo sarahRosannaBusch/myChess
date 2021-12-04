@@ -28,7 +28,7 @@ var myChess = (function() {
             player = (fen.split(" ")[1]) === 'w' ? 'w' : 'b';
         }
         let boardPosition = fen ? fen : 'start';
-        game = new Chess(fen);
+        game = new Chess(fen ? fen : undefined);
         myBoard = document.getElementById('myBoard') //todo investigate why using $('#myBoard') ends up throwing errors on transform
         board = Chessboard('myBoard', {
             draggable: true,
@@ -85,8 +85,7 @@ var myChess = (function() {
         
         //$fen.html(game.fen()) //piece placement
         //console.log(game.fen());
-        sessionStorage.setItem("fen", game.fen());
-        sessionStorage.setItem("pgn", game.pgn());
+        //sessionStorage.setItem("fen", game.fen());
     }
 
     function removeGreySquares () {
