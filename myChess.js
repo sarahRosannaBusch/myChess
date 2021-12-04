@@ -1,9 +1,9 @@
   
 "use strict"
 
-/** @brief Serverless version of myChess
+/** @brief myChess web app
  *  @author Sarah Rosanna Busch
- *  @date 21 April 2021
+ *  @date 3 Dec 2021
  */
 
 var myChess = (function() {
@@ -19,17 +19,20 @@ var myChess = (function() {
     var blackSquareGrey = '#696969'
 
     that.init = function() {
-        game = new Chess();
         $status = $('#status')
         $pgn = $('#pgn')
         $fen = $('#fen')
+        let fen = sessionStorage.getItem("fen");
+        let player = (fen.split(" ")[1]) === 'w' ? 'w' : 'b';
+        let boardPosition = fen ? fen : 'start';
+        game = new Chess(fen);
         myBoard = document.getElementById('myBoard') //todo investigate why using $('#myBoard') ends up throwing errors on transform
         board = Chessboard('myBoard', {
             draggable: true,
-            position: 'start',
-            dropOffBoard: 'trash',
+            position: boardPosition,
+            dropOffBoard: 'snapback',
             sparePieces: false,
-            orientation: 'white',
+            orientation: player,
             pieceTheme: 'img/chesspieces/myPieces/{piece}.svg',
             onDragStart: onDragStart,
             onDrop: onDrop,
@@ -38,8 +41,13 @@ var myChess = (function() {
             onMouseoverSquare: onMouseoverSquare
         });
         updateStatus();
+
+        if(player === 'b') flipBoard();
+
+        $(window).resize(board.resize);
     }
 
+    //derived from:
     //source: https://chessboardjs.com/examples#5000 
     //source: https://chessboardjs.com/examples#5003
     function updateStatus () {
@@ -70,8 +78,12 @@ var myChess = (function() {
             }
         }
         $status.html(status) //player turn, etc
+        //$pgn.html(game.pgn()) //moves
+        
         //$fen.html(game.fen()) //piece placement
-        $pgn.html(game.pgn()) //moves
+        //console.log(game.fen());
+        sessionStorage.setItem("fen", game.fen());
+        sessionStorage.setItem("pgn", game.pgn());
     }
 
     function removeGreySquares () {
@@ -113,7 +125,7 @@ var myChess = (function() {
         // illegal move
         if (move === null) return 'snapback'
 
-        flipBoard()
+        flipBoard();
         updateStatus()
     }
 
