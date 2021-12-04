@@ -23,7 +23,10 @@ var myChess = (function() {
         $pgn = $('#pgn')
         $fen = $('#fen')
         let fen = sessionStorage.getItem("fen");
-        let player = (fen.split(" ")[1]) === 'w' ? 'w' : 'b';
+        let player = 'w';
+        if(fen) {
+            player = (fen.split(" ")[1]) === 'w' ? 'w' : 'b';
+        }
         let boardPosition = fen ? fen : 'start';
         game = new Chess(fen);
         myBoard = document.getElementById('myBoard') //todo investigate why using $('#myBoard') ends up throwing errors on transform
