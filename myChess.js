@@ -50,6 +50,12 @@ var myChess = (function() {
         $(window).resize(board.resize);
     }
 
+    that.resetBoard = function() {
+        board.start();
+        game.reset();
+        updateStatus();
+    }
+
     //derived from:
     //source: https://chessboardjs.com/examples#5000 
     //source: https://chessboardjs.com/examples#5003

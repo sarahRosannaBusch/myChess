@@ -62,6 +62,10 @@
 
 /* my additions */
 
+section {
+    overflow: hidden;
+}
+
 h3 {
     text-align: center;
     margin-top: 0.25em;
@@ -75,7 +79,33 @@ h3 {
     margin: auto
  }
 
- .pgn {
-    min-height: 3em;
+#options {
+    text-align: center;
+}
+
+button {
+    padding: 0.5em;
+    background-color: blueviolet;
     color: lavender;
- }
+    border-radius: 5px;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #222;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

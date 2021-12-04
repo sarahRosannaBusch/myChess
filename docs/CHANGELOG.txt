@@ -1,6 +1,4 @@
 TODO:
-- make board size responsive [complete]
-- add browser data so game doesn't reset on reload [complete]
 - add indicators for check, mate, threatened/attacking, score
 - add UI toggle options:
     - board spin
@@ -8,3 +6,8 @@ TODO:
     - check
     - threatened/attacking
     - score
+
+RELEASE: 3 Dec 2021
+    - make board size responsive [complete]
+    - add browser data so game doesn't reset on reload [complete]
+    - add reset board button [complete]
