@@ -85,7 +85,7 @@ var myChess = (function() {
         
         //$fen.html(game.fen()) //piece placement
         //console.log(game.fen());
-        //sessionStorage.setItem("fen", game.fen());
+        sessionStorage.setItem("fen", game.fen());
     }
 
     function removeGreySquares () {
