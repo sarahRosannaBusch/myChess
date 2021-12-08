@@ -66,28 +66,66 @@ section {
     overflow: hidden;
 }
 
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+    font-family: monospace;
+    color: blueviolet;
+    text-shadow: 2px 1px black;
+}
+
 h3 {
     text-align: center;
-    margin-top: 0.25em;
+    font-size: xx-large;
+    margin-top: 0.75em;
     margin-bottom: 0.25em;
-    font-family: cursive;
-    color: blueviolet;
+    font-family: monospace;
+    color: lavender;
+    text-shadow: 2px 1px black;
 }
 
 .container {
-    max-width: 80vh; 
-    margin: auto
+    max-width: 75vh; 
+    margin: auto;
+    box-shadow: 4px 4px 5px black, -1px -1px 2px lavender;
  }
 
 #options {
-    text-align: center;
+    display: flex;
+    max-width: 75vh; /* to match board */
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+#options div {
+    flex: 0.5;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }
 
 button {
-    padding: 0.5em;
     background-color: blueviolet;
-    color: lavender;
-    border-radius: 5px;
+    color: black;
+    border-radius: 0.75em;
+    border: none;
+    font-size: 18pt;
+    font-weight: bold;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1em;
+    box-shadow: 1px 1px inset lavender, -2px -2px inset black;
+}
+
+button:active {
+    box-shadow: -1px -1px inset lavender, 2px 2px inset black;
 }
 
   /* width */

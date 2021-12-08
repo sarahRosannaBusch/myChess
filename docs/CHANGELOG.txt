@@ -1,11 +1,18 @@
 TODO:
-- add indicators for check, mate, threatened/attacking, score
+- add indicators for:
+    - check
+    - mate
 - add UI toggle options:
     - board spin
     - legal moves
     - check
-    - threatened/attacking
-    - score
+    - board reset confirmation
+- create dialogs
+    - UI options
+    - game log
+    - board reset confirmation
+- add "undo" button [complete]
+- fix boardFlip bugs [complete]
 
 RELEASE: 3 Dec 2021
     - make board size responsive [complete]
