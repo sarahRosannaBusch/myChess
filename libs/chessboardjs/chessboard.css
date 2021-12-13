@@ -4,6 +4,13 @@
  *  date: 15 Nov 2021
  */
 
+body {
+    display: flex;
+    margin: 0;
+    background:#343434;
+    overflow: hidden;
+}
+
 /* derived from: */
 /*! chessboard.js v@VERSION | (c) 2019 Chris Oakman | MIT License chessboardjs.com/license */
 
@@ -62,8 +69,22 @@
 
 /* my additions */
 
+main {
+    flex: 1;
+    height: 100vh;
+    max-width: 70vh;
+    margin: auto;
+}
+
+.dialog {
+    flex: 0.25;
+    color: lavender;
+}
+
 section {
-    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 h1 {
@@ -87,14 +108,13 @@ h3 {
 }
 
 .container {
-    max-width: 75vh; 
+    max-width: 95%; 
     margin: auto;
-    box-shadow: 4px 4px 5px black, -1px -1px 2px lavender;
  }
 
 #options {
     display: flex;
-    max-width: 75vh; /* to match board */
+    max-width: 95%; /* to match board .container */
     margin: auto;
     margin-top: 0.5em;
 }
@@ -126,6 +146,24 @@ button {
 
 button:active {
     box-shadow: -1px -1px inset lavender, 2px 2px inset black;
+}
+
+input[type="checkbox"] {
+    height: 2em;
+    width: 2em;
+}
+
+h2 {
+    color: lavender;
+    margin: 0.25em;
+}
+
+.dialog button { /* checkboxes */
+    background-color: blueviolet;
+    color: lavender;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
 }
 
   /* width */

@@ -10,23 +10,19 @@
     <link rel='icon shortcut' href='img/chesspieces/myPieces/wR.png' />
     <link rel='stylesheet' href='libs/chessboardjs/chessboard.css' />
 </head>
-<body onload='myChess.init()' style='background:#343434'>
-    <section>
-        <div id='options'>
-            <div class='left'>
-                <button title='Reset Board' onclick='myChess.resetBoard()'>&#128472</button>
+<body onload='myChess.init()'>
+    <main>
+        <section>
+            <h1>
                 <button title='Undo Last Move' onclick='myChess.undo()'>&#10554</button>
-            </div>
-            <div class='right'>
-                <button title='Game Log' onclick='myChess.showHistory()'>&#128462</button>
-                <button title='Settings' onclick='myChess.showSettings()'>&#9881</button>
-            </div>
-        </div>
-        <h1>Play Chess</h1>
-        <br>
-        <div id="myBoard" class="container spin"></div>
-        <h3 id="status" style="padding-bottom:0.25em">Make your move</h3>
-    </section>
+                Play Chess            
+                <button title='Reset Board' onclick='myChess.resetBoard()'>&#128472</button>
+            </h1>
+            <br>
+            <div id="myBoard" class="container spin"></div>
+            <h3 id="status" style="padding-bottom:0.25em">Make your move</h3>
+        </section>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='libs/chessboardjs/chessboard.js'></script>

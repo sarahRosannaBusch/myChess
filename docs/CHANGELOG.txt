@@ -11,10 +11,17 @@ TODO:
     - UI options
     - game log
     - board reset confirmation
+
+RELEASE: 13 Dec 2021
 - add "undo" button [complete]
 - fix boardFlip bugs [complete]
 
 RELEASE: 3 Dec 2021
-    - make board size responsive [complete]
-    - add browser data so game doesn't reset on reload [complete]
-    - add reset board button [complete]
+- make board size responsive [complete]
+- add browser data so game doesn't reset on reload [complete]
+- add reset board button [complete]
+
+RELEASE: 15 Nov 2021
+- integration of chess.js and chessboard.js, using their examples
+- fixed touchscreen bug in chessboard.js
+- swapped piece images to my own svgs
