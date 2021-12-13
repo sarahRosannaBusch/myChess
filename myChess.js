@@ -6,6 +6,10 @@
  *  @date 3 Dec 2021
  */
 
+//derived from:
+//source: https://chessboardjs.com/examples#5000 
+//source: https://chessboardjs.com/examples#5003
+
 var myChess = (function() {
     var that = {};
 
@@ -45,8 +49,6 @@ var myChess = (function() {
         });
         updateStatus();
 
-        if(player === 'b') flipBoard();
-
         $(window).resize(board.resize);
     }
 
@@ -56,15 +58,28 @@ var myChess = (function() {
         updateStatus();
     }
 
-    //derived from:
-    //source: https://chessboardjs.com/examples#5000 
-    //source: https://chessboardjs.com/examples#5003
+    that.undo = function() {
+        let lastMove = game.undo();
+        if(lastMove) {
+            board.move(lastMove.to + '-' + lastMove.from);
+            updateStatus();
+        } else {
+            console.log('undo failed');
+            //if page was refreshed mid game, undo will only work back to refresh point
+        }
+    }
+
     function updateStatus () {
         var status = ''
 
         var moveColor = 'White'
         if (game.turn() === 'b') {
             moveColor = 'Black'
+        }
+        
+        let orientation = board.orientation();
+        if(orientation !== moveColor.toLowerCase()) {
+            flipBoard();
         }
 
         // checkmate?
@@ -87,10 +102,6 @@ var myChess = (function() {
             }
         }
         $status.html(status) //player turn, etc
-        //$pgn.html(game.pgn()) //moves
-        
-        //$fen.html(game.fen()) //piece placement
-        //console.log(game.fen());
         sessionStorage.setItem("fen", game.fen());
     }
 
@@ -133,7 +144,6 @@ var myChess = (function() {
         // illegal move
         if (move === null) return 'snapback'
 
-        flipBoard();
         updateStatus()
     }
 

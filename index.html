@@ -10,15 +10,19 @@
     <link rel='icon shortcut' href='img/chesspieces/myPieces/wR.png' />
     <link rel='stylesheet' href='libs/chessboardjs/chessboard.css' />
 </head>
-<body onload='myChess.init()' style='background:#343434'>
-    <section>
-        <h3 id="status" style="padding-bottom:0.25em">Make your move</h3>
-        <div id="myBoard" class="container spin"></div>
-        <br>
-        <div id='options'>
-            <button onclick='myChess.resetBoard()'>Reset Board</button>
-        </div>
-    </section>
+<body onload='myChess.init()'>
+    <main>
+        <section>
+            <h1>
+                <button title='Undo Last Move' onclick='myChess.undo()'>&#10554</button>
+                Play Chess            
+                <button title='Reset Board' onclick='myChess.resetBoard()'>&#128472</button>
+            </h1>
+            <br>
+            <div id="myBoard" class="container spin"></div>
+            <h3 id="status" style="padding-bottom:0.25em">Make your move</h3>
+        </section>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='libs/chessboardjs/chessboard.js'></script>
