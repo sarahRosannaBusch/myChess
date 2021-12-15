@@ -13,11 +13,15 @@
 <body onload='myChess.init()'>
     <main>
         <section>
-            <h1>
-                <button title='Undo Last Move' onclick='myChess.undo()'>&#10554</button>
-                Play Chess            
-                <button title='Reset Board' onclick='myChess.resetBoard()'>&#128472</button>
-            </h1>
+            <heading>
+                <button title='Undo Last Move' onclick='myChess.undo()'>
+                    <img alt='undo' src='img/undo.svg' />
+                </button>
+                <h1>Play Chess</h1>            
+                <button title='Reset Board' onclick='myChess.resetBoard()'>
+                    <img alt='reset' src='img/reload.svg' />
+                </button>
+            </heading>
             <br>
             <div id="myBoard" class="container spin"></div>
             <h3 id="status" style="padding-bottom:0.25em">Make your move</h3>
